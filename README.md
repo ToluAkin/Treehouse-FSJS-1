@@ -1,2 +1,3 @@
-# crispy-sniffle
-This includes all my Treehouse Full Stack JavaScript TechDegree projects
+Tech
+# Unit 01
+This includes all the unit-01 project for random quotes generator. Random quotes are generated show another quote button is clicked. Also,every 20 seconds a new quoted is generated.
