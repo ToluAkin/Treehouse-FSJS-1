@@ -22,7 +22,7 @@ let quotes = [
     quote: "Possession is eleven points in the law.",
     source: "Colley Cibber",
     citation: "Woman's Wit, Act 1",
-    year: "unknown",
+    year: "",
     tags: "Possessions"
   },
   {
@@ -70,15 +70,15 @@ let quotes = [
   {
     quote: "Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy",
     source: "Norman Vincent Peale",
-    citation: "unknown",
-    year: "unknown",
+    citation: "",
+    year: "",
     tags: "Confidence"
   },
   {
     quote: "The body is a sacred garment.",
     source: "Martha Graham",
-    citation: "unknown",
-    year: "unknown",
+    citation: "",
+    year: "",
     tags: "Body"
   }
 ];
@@ -128,9 +128,19 @@ let printQuote = () => {
   
   html = `<p class="quote">${quote.quote}</p>`;
   html += `<p class="source">${quote.source}`;
-  html += `<span class="citation">${quote.citation}, </span>`;
-  html += `<span class="tags"> ${quote.tags}</span>`;
-  html += `<span class="year">${quote.year}</span></p>`;
+  
+  if (quote.citation !== "") {
+    html += `<span class="citation">${quote.citation}, </span>`;
+  }
+
+  if (quote.tags !== "") {
+    html += `<span class="tags"> ${quote.tags}</span>`;
+  }
+  
+  if (quote.year !== "") {
+    html += `<span class="year">${quote.year}</span></p>`;
+  }
+  
 
   document.getElementById('quote-box').innerHTML = html;
 }
