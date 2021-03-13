@@ -113,9 +113,7 @@ let getRandomQuote = () => {
 ***/
 
 let getRandomColor = () => {
-  let randomColor = `rgb(${randomNumber(256)}, ${randomNumber(256)}, ${randomNumber(256)})`
-  
-  document.body.style.background = randomColor
+  document.body.style.background = `rgb(${randomNumber(256)}, ${randomNumber(256)}, ${randomNumber(256)})`
 }
 
 /***

@@ -1,3 +1,4 @@
-TreeHouse TechDegree Projects
-# Unit 01
-This includes the #unit-01 project (Random quotes generator). Random quotes are generated show another quote button is clicked. Also,every 20 seconds a new quote is displayed.
+# Random quote generator
+The random quote generator is build with vanilla javascript. <br>
+A random quote generator that displays quotes from the json data. The quote changes every 20 seconds or when the page 
+is clicked on. Also, background color of the page changes as the quote changes.
